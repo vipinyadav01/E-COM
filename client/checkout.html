@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Minimalist Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Minimalist Store</div>
+        <ul class="nav-links" id="nav-links">
+            <!-- Navigation links will be populated by JavaScript -->
+        </ul>
+    </nav>
+    <section class="checkout-section">
+        <h2>Checkout</h2>
+        <form id="checkout-form">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="address" placeholder="Shipping Address" required></textarea>
+            <button type="submit" class="btn">Pay Now</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2025 Minimalist Store. All rights reserved.</p>
+    </footer>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/lib/jwt-decode.min.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+
+</body>
+
+</html>

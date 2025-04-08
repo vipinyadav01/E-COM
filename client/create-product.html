@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product - Minimalist Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Minimalist Store</div>
+        <ul class="nav-links" id="nav-links">
+            <!-- Navigation links will be populated by JavaScript -->
+        </ul>
+    </nav>
+    <section class="create-product-section">
+        <h2>Create New Product</h2>
+        <form id="create-product-form">
+            <input type="text" id="name" placeholder="Product Name" required>
+            <input type="number" id="price" placeholder="Price" step="0.01" required>
+            <textarea id="description" placeholder="Description" required></textarea>
+            <input type="text" id="image" placeholder="Image URL" required>
+            <select id="category" required>
+                <option value="">Select Category</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="accessories">Accessories</option>
+            </select>
+            <label><input type="checkbox" id="featured"> Featured Product</label>
+            <button type="submit" class="btn">Create Product</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2025 Minimalist Store. All rights reserved.</p>
+    </footer>
+    <script src="js/create-product.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/lib/jwt-decode.min.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+
+</body>
+
+</html>

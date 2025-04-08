@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Minimalist Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Minimalist Store</div>
+        <ul class="nav-links" id="nav-links">
+            <!-- Navigation links will be populated by JavaScript -->
+        </ul>
+    </nav>
+    <section class="products-section">
+        <h2>Our Products</h2>
+        <div class="filters">
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="accessories">Accessories</option>
+            </select>
+        </div>
+        <div class="product-grid" id="product-grid"></div>
+    </section>
+    <footer>
+        <p>© 2025 Minimalist Store. All rights reserved.</p>
+    </footer>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/lib/jwt-decode.min.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+
+</body>
+
+</html>
